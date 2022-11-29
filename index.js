@@ -61,6 +61,9 @@ app.use('/quizz', quizz);
  //payemnt gasteway
  const payment = require("./routes/payment")
  app.use('/payment', payment);
+
+ const products = require('./routes/products');
+ app.use('/products',products);
  
 
  process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 1;

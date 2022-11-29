@@ -57,7 +57,7 @@ router.post("/userexisting", async (req, res) => {
                     }
                 })
             } else {
-                res.status(200).json({ Result: 'User not exists', code: 1 });
+                res.status(200).json({ Result: 'User Not Exists', code: 1 });
             }
 
         } else {
@@ -126,7 +126,7 @@ router.post("/userlogin", (req, res) => {
                 if (checked) {
                     res.status(200).json({ message: "success", user_id: results[0][0].ID });
                 } else {
-                    res.status(200).json({ message: "Wrong passowrd" });
+                    res.status(200).json({ message: "Wrong Password" });
                 }
 
             }
